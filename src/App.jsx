@@ -5,11 +5,8 @@ const App = () => {
   return (
     <>
       <Login />
-      <bello />
     </>
   )
 }
 
 export default App
-
-helloa
