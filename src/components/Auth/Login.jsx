@@ -7,8 +7,6 @@ const Login = () => {
 
   const submitHandler = (e)=>{
     e.preventDefault();
-    console.log("email is", email);
-    console.log("password is", password);
 
     setEmail("");
     setPassword("");
@@ -29,7 +27,8 @@ const Login = () => {
           onChange={(e)=>{
             setEmail(e.target.value);
           }}
-          required className='outline-none bg-transparent placeholder:text-gray-400 border-2 border-emerald-600  text-xl py-3 px-5 rounded-full' type="email" placeholder='Enter your email'
+          required 
+          className='outline-none bg-transparent placeholder:text-gray-400 border-2 border-emerald-600  text-xl py-3 px-5 rounded-full' type="email" placeholder='Enter your email'
           />
           <input
           value={password}
